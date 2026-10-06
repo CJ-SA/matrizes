@@ -6,19 +6,21 @@ class Main {
 
         Scanner sc = new Scanner (System.in);
         int soma = 0;
-        int[] valores = {5, 8, 10, 2, 5};
-        for (int i = 0; i < 5; i++) {
-            soma = soma + valores[i];
+        int maior = 0;
+        int[] valores = {20, 30, 140, 50, 90};
+        for (int i = 0; i < valores.length; i++) {
+            System.out.println(valores[i]);
+            if (valores[i] > maior)
+            {
+                maior = valores [i];
+            } else {
+                maior = maior + 0;
+            }
 
 
         }
-        System.out.print(" soma dos valores ");
-        for (int i = 0; i < valores.length - 1; i++){
-            System.out.print(valores[i]);
-            System.out.print(" + ");
-            if (i == valores.length) break;
-        }
 
-        System.out.print(" é igual à " + soma);
+
+        System.out.println(maior);
     }
 }
